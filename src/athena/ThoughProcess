@@ -1,0 +1,11 @@
+
+1. first I parse the csv file line by line, then I split tokens such as account number, price etc. separated by ','
+
+2. I created a class of type AccountPosition which contains account number, price, wuantity and script name;
+
+3. I created a unordered_map of type <String, vector<AccountPositions>>- this has account number as a key and a vector 
+of type account position as value. This basically stores every relevant information about a perticular account. 
+So that I can aggregate data based on account number.
+
+4. After this unordered map is created I traverse over all of it and for each accont nu,mber I traverse over the vector
+ containing all the positons held by the account and write to file the aggregated data.

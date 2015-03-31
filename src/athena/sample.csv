@@ -1,0 +1,8 @@
+Account,Symbol,Quantity,Price
+TestAccount-002,AAPL,(295),8.0300
+TestAccount-001,AAPL,(2095),8.0300
+TestAccount-003,AAPL,29500,8.0300
+TestAccount-002,MSFT,579,98.37
+TestAccount-002,GOOG,50000,1000.0
+TestAccount-003,GOOG,(50001),1000.1
+TestAccount-003,GOOG,100,1000.1
