@@ -11,17 +11,6 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="true" assert-keyword="true" jdk-15="true" />
-  <component name="SbtLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../../IdeaProjects/ScalaStuff" value="1426618146000" />
-        <entry key="F:/Win_Doc/IdeaProjects/ScalaStuff" value="1426618146000" />
-      </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
