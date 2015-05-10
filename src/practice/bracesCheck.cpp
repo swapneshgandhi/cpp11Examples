@@ -34,8 +34,11 @@ bool isBracketClosed(char Opening, char Closing){
 }
 
 /*
- * Complete the function below.
- */
+returns YES if string provided to it is a valid brace.
+pushes each charatcer to stack if it is an opening brace.
+ and checks to see if an closing brace corresponds to brace
+ at the top of the stack.
+*/
 string braces(string value) {
 	stack<char>helperStack;
 
@@ -64,7 +67,7 @@ string braces(string value) {
 }
 
 int main(){
-	string s="asas";
+	string s="{()}[]()";
 	cout<<braces(s);
 }
 

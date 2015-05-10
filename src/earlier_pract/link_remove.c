@@ -10,6 +10,12 @@ struct LinkedListNode{
     LinkedListNode *next;
 };
 
+/*
+A singly linkedList,
+ to which we can add new elements
+ and remove a perticular elements elements
+*/
+
 LinkedListNode* _insert_node_into_singlylinkedlist(LinkedListNode *head, int val){
     if(head == NULL) {
         head = (LinkedListNode *) (malloc(sizeof(LinkedListNode)));
@@ -73,13 +79,17 @@ int main() {
     LinkedListNode* _list = NULL;
     scanf("%d\n", &_list_size);
     int _list_i;
+
+    //load elements to the linkedList
     for(_list_i = 0; _list_i < _list_size; _list_i++) {
         scanf("%d\n", &_list_item);
         _list = _insert_node_into_singlylinkedlist(_list, _list_item);
     }
 
+    //remove elements which match the val
     removeAll(_val, &_list);
 
+    //print out all the elements in the end.
     LinkedListNode* _current = _list;
         while (_current != NULL)
     {

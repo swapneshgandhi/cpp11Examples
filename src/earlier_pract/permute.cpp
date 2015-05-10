@@ -2,6 +2,11 @@
 #include <cstdlib>
 #include <iostream>
 
+/*
+*contains a factorial fucntion
+and permute function which retruns all the permutations of a string
+*/
+
 int factorial(int n){
 	int c,fact=1;
 
@@ -26,6 +31,16 @@ char* insertCharAt(int pos, char c, char *str){
 		c=temp;
 		str++;
 	}
+
+}
+
+void free_mem(char **old_array){
+
+for (int i=0;i<100;i++){
+		delete old_array[i];
+}
+
+delete old_array;
 
 }
 
@@ -54,6 +69,7 @@ char** permute(char *str){
 
 	char **old_permute=permute(rem);
 
+
 	int j=0;
 
 	while(strlen(old_permute[j])>0){
@@ -63,6 +79,8 @@ char** permute(char *str){
 
 		}
 	}
+	// free all the old permute memory here.
+	free_mem(old_permute);
 	return permute_array;
 
 }

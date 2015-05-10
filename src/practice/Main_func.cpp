@@ -54,8 +54,7 @@ bool Inserted=false;
 int main ()
 {
   //std::unordered_map<std::string,double> myrecipe;
-  
-  
+
   ifstream inf("Sample.dat");
  
     // If we couldn't open the output file stream for writing

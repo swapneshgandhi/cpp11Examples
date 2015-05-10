@@ -8,7 +8,6 @@
 #include <vector>
 #include <memory>
 
-
 /*
 // Write file b to stdout
 // Stock, day high, day low
@@ -18,19 +17,19 @@ BT.L,445.3,450.9
 
 
 
-         class TradeData{
-         public:
-         int vol;
-         float high;
-         float low;
+class TradeData{
+public:
+int vol;
+float high;
+float low;
 
-         TradeData(int vol, float low, float high){
-         this->vol=vol;
-         this->high=high;
-         this->low=low;
-         }
+TradeData(int vol, float low, float high){
+this->vol=vol;
+this->high=high;
+this->low=low;
+}
 
-         };
+};
 
 std::vector<std::string> &split(const std::string &s, char delim, std::vector<std::string> &elems) {
     std::stringstream ss(s);
@@ -40,7 +39,6 @@ std::vector<std::string> &split(const std::string &s, char delim, std::vector<st
     }
     return elems;
 }
-
 
 using namespace std;
 
